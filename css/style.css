@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#conteudo-principal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#tela-adicionar-tarefa {
+    width: 400px;
+    height: 350px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+#botoes-lista-tarefa {
+    width: 320px;
+    margin: 0 auto;
+}
+
+#cabecalho {
+    text-align: center;
+    padding: 30px;
+}
+
+#btn-adicionar {
+    width: 49%;
+}
+
+#btn-ver-tarefas {
+    width: 49%;
+}
+
+.botao {
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.fundo-verde {
+    background-color: green;
+}
+
+.fundo-azul {
+    background: #123142;
+}
+
+.campo {
+    width: 320px;
+    margin: 0 auto 30px auto;
+}
+
+.display-block {
+    display: block;
+}
+
+.entrada-dados {
+    width: 300px;
+    padding: 8px;
+}
