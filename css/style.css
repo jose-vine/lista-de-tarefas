@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    margin-bottom: 8px;
 }
 
 #conteudo-principal {
@@ -32,21 +34,31 @@ body {
 
 #cabecalho {
     text-align: center;
-    padding: 30px;
+    padding: 25px;
 }
 
 #btn-adicionar {
-    width: 49%;
+    width: 150px;
+    float: right;
 }
 
 #btn-ver-tarefas {
-    width: 49%;
+    width: 150px;
+}
+
+#campo-titulo {
+    height: 77px;
+    margin-bottom: 20px;
+}
+
+#campo-descricao {
+    height: 77px;
 }
 
 .botao {
     padding: 15px;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 0;
     cursor: pointer;
 }
@@ -59,9 +71,9 @@ body {
     background: #123142;
 }
 
-.campo {
+#campos-formulario {
     width: 320px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 20px auto;
 }
 
 .display-block {
@@ -71,4 +83,12 @@ body {
 .entrada-dados {
     width: 300px;
     padding: 8px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.mensagem-erro {
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
 }

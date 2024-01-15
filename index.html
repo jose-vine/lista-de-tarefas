@@ -12,15 +12,19 @@
         <section id="tela-adicionar-tarefa">
             <header id="cabecalho">
                 <h1>Lista de Tarefas</h1>
-            </header>
-            <div class="campo"> 
-                <label for="titulo" class="display-block">Título</label>
-                <input type="text" name="titulo" id="titulo" class="entrada-dados">
-            </div>
-            <div class="campo">
-                <label for="descricao" class="display-block">Descrição</label>
-                <input type="text" name="descricao" id="descricao" class="entrada-dados">
-            </div>
+            </header> 
+                <div id="campos-formulario">
+                    <div id="campo-titulo">
+                        <label for="titulo" class="display-block">Título</label>
+                        <input type="text" name="titulo" id="titulo" class="entrada-dados">
+                        <p class="mensagem-erro"></p>
+                    </div>
+                    <div id="campo-descricao">
+                        <label for="descricao" class="display-block">Descrição</label>
+                        <input type="text" name="descricao" id="descricao" class="entrada-dados">
+                        <p class="mensagem-erro"></p>
+                    </div>
+                </div>
             <div id="botoes-lista-tarefa">
                 <button id="btn-ver-tarefas" class="botao fundo-azul">Ver tarefas</button>
                 <button id="btn-adicionar" class="botao fundo-verde">Adicionar</button>
