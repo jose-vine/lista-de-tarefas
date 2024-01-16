@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
     <title>Lista de Tarefas</title>
 </head>
 <body>
     <main id="conteudo-principal" class="fundo-azul">
         <section id="tela-adicionar-tarefa">
             <header id="cabecalho">
-                <h1>Lista de Tarefas</h1>
+                <h1>Lista de tarefas</h1>
             </header> 
-                <div id="campos-formulario">
+                <div id="formulario">
                     <div id="campo-titulo">
                         <label for="titulo" class="display-block">Título</label>
-                        <input type="text" name="titulo" id="titulo" class="entrada-dados">
-                        <p class="mensagem-erro"></p>
+                        <input type="text" name="titulo" id="titulo" onfocusout="validarCampo(camposDados[0])">
+                        <div class="mensagem-erro"></div>
                     </div>
                     <div id="campo-descricao">
                         <label for="descricao" class="display-block">Descrição</label>
-                        <input type="text" name="descricao" id="descricao" class="entrada-dados">
-                        <p class="mensagem-erro"></p>
+                        <input type="text" name="descricao" id="descricao" onfocusout="validarCampo(camposDados[1])">
+                        <div class="mensagem-erro"></div>
                     </div>
                 </div>
             <div id="botoes-lista-tarefa">
-                <button id="btn-ver-tarefas" class="botao fundo-azul">Ver tarefas</button>
-                <button id="btn-adicionar" class="botao fundo-verde">Adicionar</button>
+                <button id="btn-ver-tarefas" class="botao fundo-azul" onclick="redirecionarPagina('lista.html')">Ver tarefas</button>
+                <button id="btn-adicionar" class="botao fundo-verde" onclick="adicionarTarefa()">Adicionar</button>
             </div>
         </section>
     </main>
