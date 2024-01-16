@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+#conteudo-principal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#tela-adicionar-tarefa {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+#botoes-lista-tarefa {
+    width: 320px;
+    margin: 0 auto;
+}
+
+#cabecalho {
+    text-align: center;
+    padding: 25px;
+}
+
+#btn-adicionar {
+    width: 150px;
+    float: right;
+}
+
+#btn-ver-tarefas {
+    width: 150px;
+}
+
+.botao {
+    padding: 15px;
+    color: #fff;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+#campo-titulo, #campo-descricao {
+    height: 94px;
+}
+
+#campo-titulo {
+    margin-bottom: 10px;
+}
+
+.fundo-verde {
+    background-color: green;
+}
+
+.fundo-azul {
+    background: #123142;
+}
+
+#formulario {
+    width: 320px;
+    margin: 0 auto 30px auto;
+}
+
+.display-block {
+    display: block;
+}
+
+input {
+    width: 300px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.mensagem-erro {
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+}
